@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Miner</title>
+  <style>
+    #goldText {
+      font-size: 18px;
+    }
+
+    #goldPerClickText {
+      font-size: 18px;
+    }
+
+    #goldBar {
+      width: 100px;
+      height: 100px;
+      background-color: gold;
+      border: 1px solid black;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    #goldBar:hover {
+      transform: scale(1.1);
+    }
+
+    .upgrade {
+      margin-top: 10px;
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .upgrade:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="goldText">Current Gold: 0</div>
+  <div id="goldPerClickText">Gold per Click: 1</div>
+  <div id="goldBar"></div>
+  <div id="upgrades">
+    <button class="upgrade">Upgrade (+1 Gold/Click) - Cost: 10</button>
+    <button class="upgrade">Upgrade (+5 Gold/Click) - Cost: 100</button>
+    <button class="upgrade">Upgrade (+25 Gold/Click) - Cost: 1000</button>
+    <button class="upgrade">Upgrade (+100 Gold/Click) - Cost: 10000</button>
+    <button class="upgrade">Upgrade (+500 Gold/Click) - Cost: 100000</button>
+    <button class="upgrade">Upgrade (+2500 Gold/Click) - Cost: 1000000</button>
+    <button class="upgrade">Upgrade (+10000 Gold/Click) - Cost: 10000000</button>
+    <button class="upgrade">Upgrade (+50000 Gold/Click) - Cost: 100000000</button>
+    <button class="upgrade">Upgrade (+250000 Gold/Click) - Cost: 1000000000</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

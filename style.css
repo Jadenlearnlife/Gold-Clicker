@@ -1,0 +1,19 @@
+.gold-animation {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border: 1px solid black;
+  animation: goldClickAnimation 0.2s ease-out;
+}
+
+@keyframes goldClickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
